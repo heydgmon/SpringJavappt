@@ -8,8 +8,10 @@
 
 public void buy() {
 
-  buyer.send();			//구매자 출금
-  seller.receive(); //판매자 입금 
+  buyer.send();		
+  //구매자 출금
+  seller.receive(); 
+  //판매자 입금 
 }
 
 
