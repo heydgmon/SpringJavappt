@@ -74,6 +74,37 @@ https://velog.io/@geesuee/Spring-AOPAspect-Oriented-Programming%EC%99%80-%ED%94%
 AOP를 적용하여 비즈니스 로직과 공통 로직을 분리하고, 매핑해주어야 한다. 
 
 
+3.@Transactional 사용 주의점
+
+@Transactional은 Proxy 형태로 동작한다.
+
+1) private은 @Transactional이 적용되지 않는다.
+
+@Transactional 
+private void createUser(){
+	
+}
+@Transactional은 Proxy 형태로 동작하기 때문에 외부에서 접근이 가능한 메서드만 설정할 수 있다.
+
+2) 같은 클래스 내 여러 @Transactional method 호출
+@Transactional
+public void createUserList(){
+    for (int i = 0; i < 10; i++) {
+        createUser(i);
+    }
+}
+
+@Transactional
+public User createUser(int index){
+    User user = User.builder()
+            .name("testname::"+index)
+            .email("testemail::"+index)
+            .build();
+    
+    userRepository.save(user);
+    return user;
+}
+위 코드는 실행하면 10번의 createUser가 실행되지만 User는 생성되지 않는다. 그 이유는 @Transactional이 Proxy 형태로 동작하기 때문이다.
 
 
 
