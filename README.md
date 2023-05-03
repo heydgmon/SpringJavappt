@@ -25,7 +25,7 @@ RealSubject : 1)체크카드에 연관된 은행 계좌, 2)현금 등등
 
 # 예시코드2)
 
-고객이 매장에 방문해서 상품을 결제
+결제 - payment interface
 
 ```
 public interface Payment{
@@ -33,7 +33,7 @@ public interface Payment{
 }
 ```
 
-이 interface를 사용하는 client쪽 code가 있다고 가정
+매장 - 이 interface를 사용하는 client쪽 code
 
 ```
 public class Store{
@@ -49,6 +49,9 @@ public class Store{
     }
 }
 ```
+
+현금결제
+
 ```
 public class Cash implements Payment{
     public void pay(int amount){
@@ -56,6 +59,9 @@ public class Cash implements Payment{
     }    
 }
 ```
+
+카드결제
+
 ```
 public class CreditCard implements Payment{
 //Credit card가 문제가 있으면 cash로 fall back
