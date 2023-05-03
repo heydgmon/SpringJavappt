@@ -25,13 +25,16 @@ RealSubject : 1)체크카드에 연관된 은행 계좌, 2)현금 등등
 
 #코드
 
-'''
-1.public interface Payment{
-
+```
+public interface Payment{
     void pay(int amount);
 }
+```
+
 이 interface를 사용하는 client쪽 code가 있다고 가정
-2.public class Store{
+
+```
+public class Store{
     
     Payment payment;
     
@@ -40,20 +43,19 @@ RealSubject : 1)체크카드에 연관된 은행 계좌, 2)현금 등등
     }
     
     public void buySomething(){
-        payment.pay(amount:100);
+        payment.pay(100);
     }
 }
-
-3.public class Cash implements Payment{
-
+```
+```
+public class Cash implements Payment{
     public void pay(int amount){
       System.outprintln(amount+"현금 결제");
-    }
-    
+    }    
 }
-여기까지 하면 cash만 구현된거
-
-4,public class CreditCard implements Payment{
+```
+```
+public class CreditCard implements Payment{
 //Credit card가 문제가 있으면 cash로 fall back
 
      Payment cash = new Cash();
@@ -67,5 +69,5 @@ RealSubject : 1)체크카드에 연관된 은행 계좌, 2)현금 등등
          }
      }
 }
-'''
+```
  
