@@ -23,9 +23,9 @@ RealSubject : 1)체크카드에 연관된 은행 계좌, 2)현금 등등
 
 2)고객이 매장에 방문해서 상품을 결제하려고 하는데 현금이 모자라는 경우 체크카드를 대신 사용할 수 있음
 
-# 예시코드(2))
+# 예시코드2)
 
-고객이 매장에 방문해서 상품을 결제(100원 이상 - 카드결제, 그 이하 -현금결제
+고객이 매장에 방문해서 상품을 결제
 
 ```
 public interface Payment{
@@ -65,8 +65,7 @@ public class CreditCard implements Payment{
      public void pay(int amount){
          if(amount>100){
            System.out.println(amount + "신용 카드")
-         }else{
-         
+         }else{       
          cash.pay(amount);
          }
      }
