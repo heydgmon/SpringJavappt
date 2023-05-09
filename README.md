@@ -143,6 +143,10 @@ public class MemberService {
 
 ![zcx](https://github.com/heydgmon/todaypresent/assets/40292371/f8e9e9a7-dbf9-4c19-ad3c-5bbdac8d383c)
 
+프록시 적용에 대해 좀 더 자세히 설명을 해보면
+
+![qwdq](https://github.com/heydgmon/todaypresent/assets/40292371/536a5526-4e27-43f2-b825-88161e9372da)
+
 실제 스프링빈들 앞에 프록시빈(가짜)을 만들어주고 
 
 스프링 컨테이너는 의존성 주입때 프록시빈을 넣어줌 
