@@ -143,6 +143,18 @@ public class MemberService {
 
 ![zcx](https://github.com/heydgmon/todaypresent/assets/40292371/f8e9e9a7-dbf9-4c19-ad3c-5bbdac8d383c)
 
+실제 스프링빈들 앞에 프록시빈(가짜)을 만들어주고 
+
+스프링 컨테이너는 의존성 주입때 프록시빈을 넣어줌 
+
+실제 스프링빈을 실행할 때도 프록시빈이 수행되고 
+
+joinpoint가 각각의 메서드들이 실행될 때 개입해 시간체크를 해주는 방식
+
+joinpoint의 proceed()가 실행될 때 실제 프록시빈이 수행됨
+
+
+
 
 
 
