@@ -130,10 +130,9 @@ public class MemberService {
     }
 }
 
-
-
-
-
-
-
 ```
+위 코드의 경우 공통 관심 사항과 핵심 관심사항이 분리가 안되어서 유지보수에 어려움이 있음.
+
+예를 들어 start와 finish 변수의 System.currentTimeMillis() -> System.nanoTime()로 변경 (밀리초를 나노초로 변경) 하라는 요구 사항이 있는 경우
+
+해당 파일을 찾아서 일일이 변경해야하는 불편함이 존재
