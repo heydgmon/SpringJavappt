@@ -135,4 +135,4 @@ public class MemberService {
 
 예를 들어 start와 finish 변수의 System.currentTimeMillis() -> System.nanoTime()로 변경 (밀리초를 나노초로 변경) 하라는 요구 사항이 있는 경우
 
-해당 파일을 찾아서 일일이 변경해야하는 불편함이 존재
+해당 파일을 찾아서 일일이 변경해야하는 불편함이 존재 -> AOP의 필요성
