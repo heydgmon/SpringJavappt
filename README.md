@@ -99,7 +99,7 @@ public class MemberService {
      * 회원가입
      */
     public Long join(Member member){
-        ```ruby
+        ```javascript
         long start = System.currentTimeMillis();
         ```
         try {
