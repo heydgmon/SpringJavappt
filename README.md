@@ -77,4 +77,60 @@ public class CreditCard implements Payment{
      }
 }
 ```
- #강의내용(
+# 강의내용(AOP)
+
+공통 관심사항과 핵심 관심사항
+1)핵심 관심사항 = 회원 가입, 회원 조회와 같은 비즈니스 로직
+2)공통 관심 사항 = 회원 가입이나 회원 조회의 기능을 실행하는데 걸리는 시간을 측정
+
+```
+@Transactional
+public class MemberService {
+    private final MemberRepository memberRepository;
+
+    public  MemberService(MemberRepository memberRepository){
+        this.memberRepository = memberRepository;
+    }
+
+    /**
+     * 회원가입
+     */
+    public Long join(Member member){
+        
+        long start = System.currentTimeMillis();
+        
+        try {
+            validateDuplicateMember(member);
+            memberRepository.save(member);
+            return member.getId();
+        } finally{
+            long finish = System.currentTimeMillis();
+            long timeMs = finish - start;
+            System.out.println("join " + timeMs + "ms");
+        }
+    }
+
+    /**
+     * 전체 회원 조회
+     */
+    public List<Member> findMembers(){
+        
+        long start = System.currentTimeMillis();
+        
+        try {
+            return memberRepository.findAll();
+        } finally {
+            long finish = System.currentTimeMillis();
+            long timeMs = finish - start;
+            System.out.println(timeMs);
+        }
+    }
+}
+
+
+
+
+
+
+
+```
