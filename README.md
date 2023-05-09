@@ -99,9 +99,9 @@ public class MemberService {
      * 회원가입
      */
     public Long join(Member member){
-        
+        ```ruby
         long start = System.currentTimeMillis();
-        
+        ```
         try {
             validateDuplicateMember(member);
             memberRepository.save(member);
