@@ -139,7 +139,10 @@ public class MemberService {
 
 분리한 부가기능을 에스펙트(Aspect)라는 독특한 모듈형태로 만듦
 
-@Aspect로 AOP를 적용하는 경우 아래와 같이 구조가 변경되는데(그림 삽입하기), 스프링 컨테이너는 프록시를 자동으로 적용함
+@Aspect로 AOP를 적용하는 경우 아래와 같이 구조가 변경되는데, 스프링 컨테이너는 프록시를 자동으로 적용함
+
+![zcx](https://github.com/heydgmon/todaypresent/assets/40292371/f8e9e9a7-dbf9-4c19-ad3c-5bbdac8d383c)
+
 
 
 
