@@ -138,3 +138,5 @@ public class MemberService {
 해당 파일을 찾아서 일일이 변경해야하는 불편함이 존재 -> AOP의 필요성
 
 @Aspect, @Annotation으로 AOP를 적용하는 경우 아래와 같이 구조가 변경되는데(그림 삽입하기), 스프링 컨테이너는 프록시를 자동으로 적용함
+
+# Spring AOP 프록시 구현 방법(JDK Dynamic Proxy,  CGLib Proxy)
