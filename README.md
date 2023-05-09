@@ -80,8 +80,11 @@ public class CreditCard implements Payment{
 # 강의내용(AOP)
 
 공통 관심사항과 핵심 관심사항
+
 1)핵심 관심사항 = 회원 가입, 회원 조회와 같은 비즈니스 로직
+
 2)공통 관심 사항 = 회원 가입이나 회원 조회의 기능을 실행하는데 걸리는 시간을 측정
+
 
 ```
 @Transactional
