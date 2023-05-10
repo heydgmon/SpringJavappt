@@ -1,3 +1,6 @@
+Spring boot에서 AOP를 적용하면 Proxy 방식을 사용한다?? 
+
+
 # 프록시 패턴
 ![proxy uml](https://user-images.githubusercontent.com/40292371/235812878-6c849bbc-f8ad-4506-b224-8337d7c4f203.png)
 
