@@ -147,19 +147,8 @@ public class MemberService {
 
 ![qwdq](https://github.com/heydgmon/todaypresent/assets/40292371/536a5526-4e27-43f2-b825-88161e9372da)
 
-실제 스프링빈들 앞에 프록시빈(가짜)을 만들어주고 
-
-스프링 컨테이너는 의존성 주입때 프록시빈을 넣어줌 
-
-실제 스프링빈을 실행할 때도 프록시빈이 수행되고 
-
-joinpoint가 각각의 메서드들이 실행될 때 개입해 시간체크를 해주는 방식
-
-joinpoint의 proceed()가 실행될 때 실제 프록시빈이 수행됨
 
 
 
 
 
-
-# Spring AOP 프록시 구현 방법(JDK Dynamic Proxy,  CGLib Proxy)
