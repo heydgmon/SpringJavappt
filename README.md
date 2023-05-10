@@ -1,4 +1,4 @@
-Spring boot에서 AOP를 적용하면 Proxy 방식을 사용한다?? 
+# Spring boot의 AOP는 Proxy 방식을 사용한다?? 
 
 
 # 프록시 패턴
