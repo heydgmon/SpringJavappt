@@ -10,9 +10,12 @@
 
 ![image](https://github.com/heydgmon/rrrr/assets/40292371/0fb58da7-4614-456d-9d16-a8988f6df2b3)
 
+기대효과 : 직관적, 중복 코드 감소
 
 2)Inline Method : 위의 반대 개념
 
 메소드 호출 부분이 메소드 자체보다 더 자세할 때 메소드 호출을 메소드 내용으로 바꾸고 메소드 삭제
 
 ![image](https://github.com/heydgmon/rrrr/assets/40292371/59a3ba9f-e32b-4ef7-a1a1-24f3d151c765)
+
+기대효과 : 코드 간결화
