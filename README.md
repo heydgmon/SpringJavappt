@@ -58,7 +58,7 @@ Design Stamina Hypothesis(디자인-스테미너 가설)에 따르면, 시간이
 
 ![image](https://github.com/heydgmon/rrrr/assets/40292371/0fb58da7-4614-456d-9d16-a8988f6df2b3)
 
-기대효과 : 직관적, 중복 코드 감소
+장점 : 직관적, 중복 코드 감소
 
 2)Inline Method : 위의 반대 개념
 
@@ -66,4 +66,19 @@ Design Stamina Hypothesis(디자인-스테미너 가설)에 따르면, 시간이
 
 ![image](https://github.com/heydgmon/rrrr/assets/40292371/59a3ba9f-e32b-4ef7-a1a1-24f3d151c765)
 
-기대효과 : 코드 간결화
+장점 : 코드 간결화
+
+3)Inline Temp : 변수에 대한 참조를 표현식 자체로 변경
+
+![image](https://github.com/heydgmon/rrrr/assets/40292371/ea3a9f81-364a-4aba-827c-56b031d815be)
+
+장점 :불필요한 변수를 제거하여 가독성 약간 향상시킴
+단점 : 임시 값이 여러번 재사용된다면 성능이 저하될 수 있음
+
+4) Replace Temp with Query : 임시 변수에 표현식의 결과를 저장하고 있다면 새로운 메소드에 표현식을 넣고 임시 변수대신 메소드 호출( Inline Temp가 사용됨)
+
+![image](https://github.com/heydgmon/rrrr/assets/40292371/293341cd-4885-40d4-a266-740e520edb94)
+
+장점 : 메소드 재사용이 되므로 중복 코드를 제거할 수 있음
+
+
