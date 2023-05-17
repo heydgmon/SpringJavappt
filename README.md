@@ -82,3 +82,5 @@ Design Stamina Hypothesis(디자인-스테미너 가설)에 따르면, 시간이
 장점 : 메소드 재사용이 되므로 중복 코드를 제거할 수 있음
 
 
+리팩토링 기법 참고 자료 : https://refactoring.guru/refactoring/techniques
+
