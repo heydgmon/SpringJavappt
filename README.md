@@ -39,3 +39,24 @@ public class Member {
     private String memberId;
 }
 ```
+
+# ToString 활용
+```
+public class Member {
+    private Long Id;
+    private String memberId;
+
+public String toString(){
+ return "Member(Id=" + this.Id +",memberId = "this.memberId +")";
+ }
+}
+
+```
+@ToString
+public class Member {
+    private Long Id;
+    private String memberId;
+}
+```
+
+
