@@ -111,6 +111,9 @@ System.out.println(order);
 ```
 
 # @EqualsAndHashCode 사용 x
+equals : 두 객체의 내용이 같은지, 동등성(equality)를 비교하는 연산자
+hashcode : 두 객체가 같은 객체인지, 동일성(identity)를 비교하는 연산자
+
 객체를 Set에 저장한 뒤 필드 값을 변경하면 hashCode가 변경되면서 이전에 저장한 객체를 찾을 수 없는 문제가 발생한다.
 
 # @Data 사용 x
