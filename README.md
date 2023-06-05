@@ -110,3 +110,14 @@ Order order = Order.builder().cancelPrice(5000L).orderPrice(10000L).build();
 System.out.println(order);
 ```
 
+# @EqualsAndHashCode 사용 x
+객체를 Set에 저장한 뒤 필드 값을 변경하면 hashCode가 변경되면서 이전에 저장한 객체를 찾을 수 없는 문제가 발생한다.
+
+# @Data 사용 x
+@Data = @RequiredArgsConstructor + @Getter + @Setter + @ToString + @EqualsAndHashCode
+
+각 annotation의 주의사항을 모두 포함한다.
+
+@EqualsAndHashCode와
+@RequriedArgsConstructor의 주의사항은 앞에서 거론했다.
+@Data 대신, @Getter, @Setter, @ToString으로 명시하는 것을 권장한다.
