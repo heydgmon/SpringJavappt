@@ -60,7 +60,7 @@ public class Member {
 }
 ```
 
-# @AllArgsConstructor, @RequiredArgsConstructor 사용금지
+# @AllArgsConstructor, @RequiredArgsConstructor 사용X
 
 ```
 @AllArgsConstructor
