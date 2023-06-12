@@ -44,9 +44,8 @@ Thread Pool은 일정량의 쓰레드를 미리 만들어두고 Task Queue 를 �
 
 
 # Spring에서의 Thread Pool 
-스프링 부트 프로젝트를 생성할 시 Spring-Web 디펜던시를 추가하면 내장 Servelt Container인 톰캣(tomcat)이 자동적으로 설정되고
 
-Spring 에서 클라이언트의 요청은 Tomcat(Servlet Container)이 처리
+Spring 에서 클라이언트의 요청은 Tomcat(Servlet Container)가 thread pool을 이용하여 처리
 
 # ThreadPoolExecutor
  스프링 부트에서 멀티 쓰레드(Multi thread)를 관리하기 위해서 ThreadPoolExecutor를 사용
