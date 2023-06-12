@@ -30,7 +30,7 @@ public class Sample extends Thread { //Thread 클래스를 상속하는 Sample �
 단점 : 쓰레드를 지나치게 많이 생성하면 리소스가 빠르게 고갈될 수 있다
 
 # Spring에서의 Thread Pool 이해
-https://www.baeldung.com/thread-pool-java-and-guava
+
 Thread Pool은 일정량의 쓰레드를 미리 만들어두고 Task Queue 를 이용해 Task 를 처리하는 패턴
 
 특징
