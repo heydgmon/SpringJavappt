@@ -63,5 +63,5 @@ server:
     accept-count: 100 //accept-count - 모든 스레드가 사용 중일때 들어오는 연결 요청 큐의 최대 길이
   port: 8080
   ```
-
+위 설정만으로 간편하게 Tomcat의 설정을 바꿀 수 있음
 
