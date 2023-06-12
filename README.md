@@ -21,5 +21,6 @@ public class Sample extends Thread { //Thread 클래스를 상속하는 Sample �
     }
 }
 ```
+실행결과
 
 ![쓰레드](https://github.com/heydgmon/0612/assets/40292371/ab7d6211-9052-4486-8eb6-04d3c9b04cfb)
