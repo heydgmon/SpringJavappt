@@ -43,16 +43,10 @@ Thread Pool은 일정량의 쓰레드를 미리 만들어두고 Task Queue 를 �
 * 즉, 스레드 풀을 사용하면 여러 개의 작업을 동시에 안정적으로 처리할 수 있다.
 
 
-# Spring에서의 Thread Pool 
+# Spring boot에서의 Thread Pool
 
-Spring 에서 클라이언트의 요청은 Tomcat(Servlet Container)가 thread pool을 이용하여 처리
-
-# ThreadPoolExecutor
- 스프링 부트에서 멀티 쓰레드(Multi thread)를 관리하기 위해서 ThreadPoolExecutor를 사용
+Spring boot에서 클라이언트의 요청은 Tomcat(Servlet Container)가 thread pool을 이용하여 처리
  
-Spring Boot가 실행되면 내부적으로 ThreadPoolExecutor 구현체를 생성해서 내장 톰캣이 사용할 쓰레드 풀을 생성하는 구조
- 
-
 application.yml에 아래와 같이 쓰레드 풀 프로퍼티를 추가할 수 있음(아래는 스프링 부트 default 설정)
 ```
 server:
