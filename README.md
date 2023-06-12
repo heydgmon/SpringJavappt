@@ -65,3 +65,39 @@ server:
 
 
 Concurrent hashmap - thread safe 보장
+
+예시 코드
+@Service
+public class MemberController{
+ 
+    @Autowired
+    private UserRepository userRepository;
+ 
+    private Member member = new Member(); //변수 “Member” 오브젝트를 생성
+ 
+    public void createUser(String id, String name) throws Exception {
+ 
+        member.setID(id); // 파라미터 id를 member 오브젝트의 id 속성에 값 설정
+        member.setName(name); //파라미터 name를 member 오브젝트의 name 속성에 값 설정
+        userRepository.insertUser(member);
+ 
+    }
+}
+ ->Thread Safe하지 않음(member)
+ 
+아래와 같이 변경
+@Service
+public class MemberController{
+ 
+    @Autowired
+    private UserRepository userRepository;
+ 
+    public void createUser(String id, String name) throws Exception {
+        Member member = new Member();
+        member.setID(id);
+        member.setName(name);
+        userRepository.insertUser(member);
+ 
+    }
+}
+->Thread Safe함
