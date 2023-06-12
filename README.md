@@ -67,6 +67,7 @@ server:
 Concurrent hashmap - thread safe 보장
 
 예시 코드
+ ```
 @Service
 public class MemberController{
  
@@ -83,9 +84,11 @@ public class MemberController{
  
     }
 }
+ ```
  ->Thread Safe하지 않음(member)
  
 아래와 같이 변경
+ ```
 @Service
 public class MemberController{
  
@@ -100,4 +103,5 @@ public class MemberController{
  
     }
 }
+ ```
 ->Thread Safe함
