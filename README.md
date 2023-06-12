@@ -62,3 +62,4 @@ server:
 
 # Thread-safe란?
 여러 스레드로부터 동시에 접근이 이루어져도 수행결과가 올바로 나오는것
+Concurrent hashmap - lock을 사용하여 thread safe 보장
