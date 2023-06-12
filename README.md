@@ -32,7 +32,7 @@ public class Sample extends Thread { //Thread 클래스를 상속하는 Sample �
 장점 : 쓰레드를 사용하면 동시에 여러개의 코드를 수행할 수 있으므로 동시에 엄청난 양의 요청이 들어올 경우 많은 양도 한번에 처리할 수 있다
 단점 : 쓰레드를 지나치게 많이 생성하면 리소스가 빠르게 고갈될 수 있다 + CPU 오버헤드가 걸릴 수 있다
 
-# Spring에서의 Thread Pool 이해
+# Thread Pool란?
 ![cas](https://github.com/heydgmon/0612/assets/40292371/5bedd74f-d97a-4cfa-80f2-59c9014a1de4)
 
 Thread Pool은 일정량의 쓰레드를 미리 만들어두고 Task Queue 를 이용해 Task 를 처리하는 패턴
@@ -43,6 +43,9 @@ Thread Pool은 일정량의 쓰레드를 미리 만들어두고 Task Queue 를 �
 * 즉, 스레드 풀을 사용하면 여러 개의 작업을 동시에 안정적으로 처리할 수 있다.
 
 
-#
+# Spring에서의 Thread Pool 사용
+스프링 부트 프로젝트를 생성할 시 스프링 부트에서는 내장 Servelt Container인 톰캣(tomcat)이 자동적으로 설정됨
+
+
 
  
