@@ -15,6 +15,10 @@
 
 ![rrr111](https://github.com/heydgmon/0619/assets/40292371/63f48463-9ab1-4220-bdeb-41fa9287c957)
 
+
+불변 객체는 값이 바뀔 일이 없기 때문에 멀티스레드 환경에서 Thread-safe하다.
+
+
 # StringBuffer : 가변 자료형, Thread-safe
 
 final 키워드가 없어 변경 가능
