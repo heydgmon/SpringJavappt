@@ -16,6 +16,8 @@
 2.StringBuffer : 가변 자료형
 
 final 키워드가 없어 변경 가능
+
+
 ![qq1](https://github.com/heydgmon/0619/assets/40292371/d7d2134e-bdd0-4574-9deb-1d0048ff9567) 
 
 
