@@ -2,7 +2,7 @@
 
 # String : 불변 자료형, Thread-safe
 
- 한번 할당된 공간이 변하지 않음
+ 1.불변 자료형 : 한번 할당된 공간이 변하지 않음
 
  인스턴스 생성 시 생성자의 매개변수로 입력받는 문자열은 이 value 라는 인스턴스 변수에 문자형 배열로 저장됨(final로 변경 불가)
  
@@ -17,13 +17,13 @@
 
 
 
-
+2.Thread-safe
 불변 객체는 값이 바뀔 일이 없기 때문에 멀티스레드 환경에서 Thread-safe하다.
 
 
 # StringBuffer : 가변 자료형, Thread-safe
 
-final 키워드가 없어 변경 가능
+1.가변 자료형 : final 키워드가 없어 변경 가능
 
 
 ![qq1](https://github.com/heydgmon/0619/assets/40292371/d7d2134e-bdd0-4574-9deb-1d0048ff9567) 
@@ -44,9 +44,8 @@ String buffer는 가변적인 특징 때문에 값을 업데이트할 시 별도
 
 
 
-자바의 synchronized 키워드를 이용하면 해당 메서드나 블록을 한번에 한 스레드씩 수행하도록 보장함(Thread-safe)
+2.Thread -safe : 자바의 synchronized 키워드를 이용하면 해당 메서드나 블록을 한번에 한 스레드씩 수행하도록 보장함
 StringBuffer class의 경우 synchronized 키워드가 선언되어 있음
-
 
 
 
