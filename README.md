@@ -15,7 +15,8 @@
 
 2.StringBuffer : 가변 자료형
 
-![qq1](https://github.com/heydgmon/0619/assets/40292371/d7d2134e-bdd0-4574-9deb-1d0048ff9567) (final 키워드가 없어 변경 가능)
+final 키워드가 없어 변경 가능
+![qq1](https://github.com/heydgmon/0619/assets/40292371/d7d2134e-bdd0-4574-9deb-1d0048ff9567) 
 
 
 ![qq11](https://github.com/heydgmon/0619/assets/40292371/dd757e35-c561-48f5-8f86-e925cea1c34f)
@@ -24,5 +25,8 @@
 
 ![rrr11](https://github.com/heydgmon/0619/assets/40292371/fcb58ac7-f721-41fc-9267-cf5a10385304)
 
+
+String은 불변적인 특징 때문에 값을 업데이트하면, 매 연산 시마다 새로운 문자열을 가진 String 인스턴스가 생성되어 메모리공간을 차지하므로 연산 속도가 낮음
+String buffer는 가변적인 특징 때문에 값을 업데이트할 시 별도의 인스턴스 생성 없이 연산이 이루어지므로 연산 속도가 빠름 
 
 
