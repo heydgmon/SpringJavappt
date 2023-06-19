@@ -13,3 +13,16 @@
 
 ![rrr111](https://github.com/heydgmon/0619/assets/40292371/63f48463-9ab1-4220-bdeb-41fa9287c957)
 
+2.StringBuffer : 가변 자료형
+
+![qq1](https://github.com/heydgmon/0619/assets/40292371/d7d2134e-bdd0-4574-9deb-1d0048ff9567) (final 키워드가 없어 변경 가능)
+
+
+![qq11](https://github.com/heydgmon/0619/assets/40292371/dd757e35-c561-48f5-8f86-e925cea1c34f)
+
+동일 객체내에서 문자열 크기 변경 가능
+
+![rrr11](https://github.com/heydgmon/0619/assets/40292371/fcb58ac7-f721-41fc-9267-cf5a10385304)
+
+
+
