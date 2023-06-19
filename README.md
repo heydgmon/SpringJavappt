@@ -9,7 +9,7 @@
 
 ![ppp11](https://github.com/heydgmon/0619/assets/40292371/04107a4f-11d5-45e8-bbf8-827c9b6fb8f0)
 
-  메모리에 "hello", "hello world"가 별도로 올라가게 되고 "hello"는 자바의 가비지 컬렉터(GC)가 제거해줌
+  메모리에 "hello", "hello world"가 별도의 객체로 올라가게 되고 "hello"는 자바의 가비지 컬렉터(GC)가 제거해줌
 
 ![rrr111](https://github.com/heydgmon/0619/assets/40292371/63f48463-9ab1-4220-bdeb-41fa9287c957)
 
