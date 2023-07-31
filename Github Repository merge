@@ -26,6 +26,8 @@ git fetch 0619
 # 7.모든 commit log를 남겨 merge 한다.
 git merge --allow-unrelated-histories 0619/main
 :wq 로 나오기
+merge 시 conflict 발생 이유?
+
 
 # 8. remote 연결을 끊어준다
 git remote remove 0619
